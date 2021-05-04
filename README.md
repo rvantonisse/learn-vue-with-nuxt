@@ -1,5 +1,7 @@
 # learn-vue-with-nuxt
 
+This is a project to learn [VueJS](https://vuejs.org/) with [NuxtJS](https://nuxtjs.org/). It will be a simple website or application fed by the [Star Wars REST API (SWAPI)](https://swapi.dev/).
+
 ## Build Setup
 
 ```bash
@@ -16,5 +18,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
