@@ -45,13 +45,29 @@ After a while the nuxt wizard starts asking questions, this is how they are answ
 
 - Version control system: Git
 
-
-```
-
 ---
 
 ## Make linting Vue work
 
 For a consistent coding experience start thinking about conventions now. Provide a solid setup so we can add or remove rules along the way to make us feel comfortable within the Vue environment.
+
+Rules added to eslint:
+
+```javascript
+'vue/component-tags-order': [
+  'error',
+  {
+    order: ['template', 'style', 'script'],
+  },
+],
+```
+
+and added to prettier:
+
+```javascript
+{
+  vueIndentScriptAndStyle: true
+}
+```
 
 ---
