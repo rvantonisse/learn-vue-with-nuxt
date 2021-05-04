@@ -50,3 +50,8 @@ After a while the nuxt wizard starts asking questions, this is how they are answ
 
 ---
 
+## Make linting Vue work
+
+For a consistent coding experience start thinking about conventions now. Provide a solid setup so we can add or remove rules along the way to make us feel comfortable within the Vue environment.
+
+---
