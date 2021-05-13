@@ -103,3 +103,16 @@ Star wars API provides a consistent approach:
 ### Pick a topic
 
 To keep it simple, we are picking one SWAPI Resource object to build a website around. I choose the Star Wars movie classic "Star Wars IV: A New Hope". Pages we will create will be things like characters, scenery and similar things to tell the story of this movie.
+
+---
+
+## Start building
+
+Time to get our content on the page.
+
+### A Vue component
+
+To get something on the first page, we need to figure how to put our data into a Vue component. Trial and error is a way, but the documentation should be a good place to find stuff: https://vuejs.org/v2/guide/components.html
+
+After a few minutes of scanning and scrolling I found what I was looking for and ended at: https://vuejs.org/v2/guide/single-file-components.html (looking at the Hello.vue component)
+
