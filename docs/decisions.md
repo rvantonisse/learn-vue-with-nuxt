@@ -54,12 +54,14 @@ For a consistent coding experience start thinking about conventions now. Provide
 Rules added to eslint:
 
 ```javascript
-'vue/component-tags-order': [
-  'error',
-  {
-    order: ['template', 'style', 'script'],
-  },
-],
+{
+  'vue/component-tags-order': [
+    'error',
+    {
+      order: ['template', 'style', 'script'],
+    },
+  ]
+}
 ```
 
 and added to prettier:
@@ -79,7 +81,7 @@ and added to prettier:
 Before anything is build, discovering the Star Wars API may be helpfull. We can also think of things we might do.
 
 ```javascript
-const API_BASE_URL = "https://swapi.dev/api/"
+const API_BASE_URL = 'https://swapi.dev/api/'
 ```
 
 Star wars API provides a consistent approach:
