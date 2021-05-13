@@ -116,3 +116,8 @@ To get something on the first page, we need to figure how to put our data into a
 
 After a few minutes of scanning and scrolling I found what I was looking for and ended at: https://vuejs.org/v2/guide/single-file-components.html (looking at the Hello.vue component)
 
+### A Nuxt Page and fetching data
+
+To get data from SWAPI into the page I had to checkout NuxtJS' docs. First I found info about fetching data https://nuxtjs.org/docs/2.x/features/data-fetching then looked to other properties https://nuxtjs.org/docs/2.x/directory-structure/pages#properties. Shortly after I stumbled upon https://nuxtjs.org/docs/2.x/features/data-fetching#async-data to fetch data used to pre render instead of fetching data client side.
+
+Now that it is clear how to get the data from SWAPI into my Star Wars website I can start refactoring the API calls into a utility class, e.g. `SwapiResource` or find something available. This will make the code more readable when different variants are used (people, planets, etc).
