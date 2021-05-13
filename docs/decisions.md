@@ -71,3 +71,29 @@ and added to prettier:
 ```
 
 ---
+
+## Start basic website plan
+
+### Discover the Star Wars API
+
+Before anything is build, discovering the Star Wars API may be helpfull. We can also think of things we might do.
+
+```javascript
+const API_BASE_URL = "https://swapi.dev/api/"
+```
+
+Star wars API provides a consistent approach:
+
+- It returns JSON,
+
+- Every resource has 3 endpoints:
+
+  1. `resource/` => all objects
+  2. `resource/:id/` => single object
+  3. `resource/schema/` => json-schema of single object
+
+- Every single resource object has references to other resources. This makes connecting objects together easier and output json-ld with schema on pages, for SEO purposes if we would like for example.
+
+- Every resource can make use of a search query like `https://swapi.dev/api/people/?search=luke`.
+
+- If we want to create a Duolingo like experience we can learn to speak (?) Wookiee with `https://swapi.dev/api/people/1/?format=wookiee`. We now get Luke's info in Wookiee...
