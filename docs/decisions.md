@@ -97,3 +97,7 @@ Star wars API provides a consistent approach:
 - Every resource can make use of a search query like `https://swapi.dev/api/people/?search=luke`.
 
 - If we want to create a Duolingo like experience we can learn to speak (?) Wookiee with `https://swapi.dev/api/people/1/?format=wookiee`. We now get Luke's info in Wookiee...
+
+### Pick a topic
+
+To keep it simple, we are picking one SWAPI Resource object to build a website around. I choose the Star Wars movie classic "Star Wars IV: A New Hope". Pages we will create will be things like characters, scenery and similar things to tell the story of this movie.
