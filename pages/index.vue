@@ -1,6 +1,5 @@
 <template>
-  <main>
-    <h1>{{ fetchedData.title }}</h1>
+  <base-page :page-title="fetchedData.title">
     <p>{{ fetchedData.introduction }}</p>
 
     <h2>Characters</h2>
@@ -26,7 +25,7 @@
       <li>X-wing</li>
     </ul>
     <a href="/starships">See all starships</a>
-  </main>
+  </base-page>
 </template>
 
 <script>
