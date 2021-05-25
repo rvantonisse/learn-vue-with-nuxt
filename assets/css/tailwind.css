@@ -1,0 +1,51 @@
+/**
+ * Global
+ */
+
+body {
+  @apply m-0 p-0 font-sans tracking-wide leading-6;
+}
+
+
+/**
+ * Headings
+ */
+h1,h2,h3,h4,h5,h6 {
+  @apply font-serif font-black;
+}
+
+h1 {
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-2xl;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+/**
+ * Non Headings
+ */
+
+ul, ol, dl {
+  @apply m-0 p-0;
+}
+
+li {
+  @apply ml-8;
+}
+
+p, ul, ol, dl {
+  @apply my-12;
+}
+
+dt + dd {
+  @apply ml-8 mb-4;
+}
+
+strong, dt {
+  @apply font-bold;
+}
