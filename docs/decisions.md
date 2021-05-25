@@ -121,3 +121,17 @@ After a few minutes of scanning and scrolling I found what I was looking for and
 To get data from SWAPI into the page I had to checkout NuxtJS' docs. First I found info about fetching data https://nuxtjs.org/docs/2.x/features/data-fetching then looked to other properties https://nuxtjs.org/docs/2.x/directory-structure/pages#properties. Shortly after I stumbled upon https://nuxtjs.org/docs/2.x/features/data-fetching#async-data to fetch data used to pre render instead of fetching data client side.
 
 Now that it is clear how to get the data from SWAPI into my Star Wars website I can start refactoring the API calls into a utility class, e.g. `SwapiResource` or find something available. This will make the code more readable when different variants are used (people, planets, etc).
+
+### Getting content on the first page
+
+The homepage will be a total overview of the "A New Hope" movie. Adding a 3 items of characters, planets and starships on the page to quickly view. Each item can be clicked on to see a detailed page. Every block has a "view all ..." link to an overviewpage of specified group of items, e.g. characters.
+
+We will be creating 2 base components for this:
+
+1. BaseCard; `<base-card>`
+
+  To display content related to one SWAPI resource item in a card design.
+
+2. BaseCardCollection; `<base-card-collection>`
+
+  A wrapper design to contain related base-cards together.
