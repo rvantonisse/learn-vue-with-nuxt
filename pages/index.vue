@@ -2,13 +2,20 @@
   <base-page :page-title="fetchedData.title">
     <p>{{ fetchedData.introduction }}</p>
 
-    <h2>Characters</h2>
-    <ul>
-      <li v-for="character in fetchedData.characters" :key="character.url">
-        <character-card :character-data="character"></character-card>
-      </li>
-    </ul>
-    <a href="/characters">See all characters</a>
+    <article class="mb-16">
+      <h2>Characters</h2>
+      <p>The characters seen in Star Wars: A New Hope.</p>
+      <ul class="flex flex-row flex-wrap">
+        <li
+          v-for="character in fetchedData.characters"
+          :key="character.url"
+          class="flex-1 m-2 p-0 min-w-20rem list-none"
+        >
+          <character-card :character-data="character"></character-card>
+        </li>
+      </ul>
+      <nuxt-link to="/characters">See all characters</nuxt-link>
+    </article>
 
     <h2>Planets</h2>
     <ul>
