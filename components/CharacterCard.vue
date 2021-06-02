@@ -7,8 +7,7 @@
       <base-character-image
         :skin-color="character.skin_color"
         :eye-color="character.eye_color"
-        :height="character.heigth"
-        :width="50 + parseInt(character.mass)"
+        :height="character.height"
       ></base-character-image>
       <dl>
         <dt>Skin</dt>
