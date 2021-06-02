@@ -135,3 +135,43 @@ We will be creating 2 base components for this:
 2. BaseCardCollection; `<base-card-collection>`
 
   A wrapper design to contain related base-cards together.
+
+
+### Create a page with all characters seen
+
+On this page we show the full presentation and reusing code from the homepage. Now we can create components that can be used instead. Like a CharacterCollection component with a prop collection to pass the data to.
+
+e.g.:
+```html
+<character-collection :collection="characters">
+  <!-- Some other content like a "go to page"-link to see full collection -->
+</character-collection>
+```
+
+Over composing can also be a thing so maybe a base-collection will be enough.
+
+### Creating a dynamic character detail page
+
+This is the place to tell the full story per character and show all their info. Here we can see we will be re-using other components in another setting / arrangement.
+
+## Further steps
+
+While I was building and creating components, there were several steps that gave me an insight of how to use Nuxt and Vue. Now I have some basic content out there I can think of:
+
+- improve composition of components
+
+  - add a styleguide to see component usecases (e.g. styleguidist, storybook)
+
+- making functions reusable
+
+- adding better accessibility experience (like for route changes, adding metadata in the head; title, description, related links)
+
+- adding another group of pages to test the composability of components
+
+- adding serverless functions (e.g. algolia for search, discord for comments)
+
+- integrating other API's
+
+- adding some API trimming and contents checking, like color mappings to get better character images :) or filing pr's to complete the data set. (Luke is not linked to a type of species; humanoid, which is available in the species set)
+
+- add some more coding conventions for working with Tailwind, Vue and Nuxt
