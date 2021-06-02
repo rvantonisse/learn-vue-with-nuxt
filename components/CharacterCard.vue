@@ -19,6 +19,9 @@
         <dt>Heigth</dt>
         <dd>{{ character.height }}</dd>
       </dl>
+      <nuxt-link :to="`/characters/${character.id}/`"
+        >Show page of {{ character.name }}</nuxt-link
+      >
     </template>
   </base-card>
 </template>
@@ -33,8 +36,18 @@
     },
     data() {
       return {
-        character: this.characterData,
+        character: Object.assign({}, this.characterData, {
+          id: this.getResourceId(this.characterData),
+        }),
       }
+    },
+    methods: {
+      getResourceId: function getResourceId(resource) {
+        const url = new URL(resource.url)
+        const id = url.pathname.replace(/\/$/g, '').split('/').slice(-1)
+
+        return id
+      },
     },
   }
 </script>
