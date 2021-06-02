@@ -4,8 +4,12 @@
       All {{ fetchedData.characters.length }} characters present in “Star Wars:
       A New Hope”!
     </p>
-    <ul>
-      <li v-for="character in fetchedData.characters" :key="character.url">
+    <ul class="flex flex-row flex-wrap">
+      <li
+        v-for="character in fetchedData.characters"
+        :key="character.url"
+        class="flex-1 m-2 p-0 min-w-20rem list-none"
+      >
         <character-card :character-data="character"></character-card>
       </li>
     </ul>
